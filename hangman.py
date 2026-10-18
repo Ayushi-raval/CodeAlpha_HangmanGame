@@ -16,7 +16,7 @@ f.close()
 category, word = random.choice(words)       # CHANGED: picks the category and the word together
 word = word.upper()
 
-total_chances = 7
+total_chances = 6
 guessed_word = "-"*len(word)
 
 while total_chances != 0:
