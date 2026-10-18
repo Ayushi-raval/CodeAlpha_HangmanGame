@@ -1,0 +1,10 @@
+# Format -> Category: word1 word2 word3
+# One category per line. Use single words with letters only (no digits or spaces).
+Animals: elephant giraffe kangaroo dolphin penguin tiger zebra monkey leopard cheetah
+Fruits: mango banana papaya pineapple strawberry watermelon guava pomegranate apple grapes
+Countries: india japan brazil canada germany australia egypt france nepal russia
+Natural Disasters: avalanche earthquake tsunami volcano cyclone flood drought tornado landslide wildfire
+Sports: cricket football tennis hockey badminton volleyball basketball kabaddi wrestling cycling
+Colors: yellow purple orange crimson violet maroon silver golden turquoise magenta
+Computer Terms: python keyboard monitor software network internet database compiler variable function
+Vehicles: bicycle scooter airplane tractor ambulance helicopter submarine motorcycle train rocket
