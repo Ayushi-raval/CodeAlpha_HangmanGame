@@ -1,26 +1,24 @@
 import random
 
-#words = ["UMBRELLA","COMPUTER","TELEPH0NE","SMARTPHONE","APPLE","BOUGHT"]
-
 f = open("words.txt", "r")
-words = []                                  # CHANGED: now a list of (category, word) pairs
-for data in f:                              # CHANGED: reads every line, not just the first
+words = []                                  # a list of (category, word) pairs
+for data in f:                              
     data = data.strip()
-    if data.startswith("#") or ":" not in data:     # NEW: skip comment/empty lines
+    if data.startswith("#") or ":" not in data:     # skip comment/empty lines
         continue
-    category_name, word_part = data.split(":", 1)   # NEW: "Animals: tiger zebra" -> "Animals", " tiger zebra"
+    category_name, word_part = data.split(":", 1)   # "Animals: tiger zebra" -> "Animals", " tiger zebra"
     for w in word_part.split():
         words.append((category_name.strip(), w))
 f.close()
 
-category, word = random.choice(words)       # CHANGED: picks the category and the word together
+category, word = random.choice(words)       #  picks the category and the word together
 word = word.upper()
 
 total_chances = 6
 guessed_word = "-"*len(word)
 
 while total_chances != 0:
-    print("Category:", category)            # NEW: shows the category hint
+    print("Category:", category)            # shows the category hint
     print(guessed_word)
     letter = input("Guess a letter: ").upper()
     if letter in word:
